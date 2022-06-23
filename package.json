@@ -1,0 +1,40 @@
+{
+  "name": "group-1_project-3",
+  "version": "1.0.0",
+  "description": "Supper Makan Apa?",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ocean272/Group-1_Project-3.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ocean272/Group-1_Project-3/issues"
+  },
+  "homepage": "https://github.com/Ocean272/Group-1_Project-3#readme",
+  "dependencies": {
+    "@heroku/buildpack-registry": "^1.0.1",
+    "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "heroku": "^7.33.3",
+    "jsonwebtoken": "^8.5.1",
+    "nodemon": "^2.0.16",
+    "pg": "^8.7.3",
+    "pg-hstore": "^2.3.4",
+    "pug": "^3.0.2",
+    "sequelize": "^6.19.0",
+    "sqlite3": "^5.0.8"
+  },
+  "engines": {
+    "node": "14.x",
+    "npm": "8.9.0"
+  }
+}
