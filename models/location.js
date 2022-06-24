@@ -51,8 +51,6 @@ module.exports = function (sequelize){
           field: "updatedAt",
       },
     },
-
-
     {
       sequelize,
       tableName: "location",

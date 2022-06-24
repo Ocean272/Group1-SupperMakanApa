@@ -57,7 +57,7 @@ class LocationController {
   }
 
   async create(req, res) {
-    const { reviewId, review } = req.body;
+    const { reviewId, location_id, user_id, review } = req.body;
     if(typeof review !== "string"){
       res.status(400);
       return res.send("Incorrect request data");
@@ -66,7 +66,9 @@ class LocationController {
       const { status, data, message } = 
       await locationService.create(
       reviewId,
-      review
+      location_id,
+      user_id,
+      review,
       );
     res.status(status);
 

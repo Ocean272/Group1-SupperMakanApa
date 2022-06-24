@@ -32,7 +32,7 @@ module.exports = {
   },
 
   
-  create: async (reviewId, review) => {
+  create: async (reviewId, location_id, user_id, review) => {
     //The result object is where we will put the result to be sent to th client.
     let result = {
       message: null,
@@ -43,6 +43,8 @@ module.exports = {
     //Look for the review and in the database.
     const newReview = await Review.create({
         reviewId: reviewId,
+        location_id: location_id,
+        user_id: user_id,
         review: review,
       });
 

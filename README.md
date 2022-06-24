@@ -76,3 +76,14 @@ payload: (example) Please use existing credential to facilitate data existence, 
     "username": "Coffee Smith",
     "password": "12345"
   }
+
+
+Create new Review
+YARC:  https://supper-makan-apa.herokuapp.com/user/newreview (POST)
+YARC:  http://localhost:3000/user/newreview  (POST)
+
+{
+  "location_id": 11,
+  "user_id":  1,
+  "review": "The food is nice and the price is reasonable."
+}
