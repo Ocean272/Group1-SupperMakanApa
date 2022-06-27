@@ -21,7 +21,9 @@ router.get("/public/location", async (req, res) => {
 
 router.get("/public/review/:location_id", async (req, res) => {
   try {
-    const results = await Review.findAll();
+    const results = await Review.findOne({
+      where: { location_id : req.params.location_id },
+    });
     console.table(JSON.parse(JSON.stringify(results)));
     return res.send(JSON.stringify(results));
   } catch (err) {
