@@ -19,6 +19,16 @@ router.get("/public/location", async (req, res) => {
   }
 });
 
+router.get("/public/review", async (req, res) => {
+  try {
+    const results = await Review.findAll();
+    console.table(JSON.parse(JSON.stringify(results)));
+    return res.send(JSON.stringify(results));
+  } catch (err) {
+    console.log(err);
+  }
+});
+
 router.get("/public/review/:location_id", async (req, res) => {
   try {
     const results = await Review.findOne({
